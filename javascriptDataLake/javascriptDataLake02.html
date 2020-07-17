@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lake JS - 02</title>
+
+  <link rel="stylesheet" href="styles.css"> <!-- ? Aqui referenciamos um arquivo CSS externo -->
+</head>
+
+<body>
+  <p>Dev 01: Nicolas</p>
+
+  <!-- ? Assim como o CSS, os Scripts podem ser definidos num arquivo externo .js ou dentro da tag <script> -->
+  <script>
+    const paragrafo = document.querySelector('p');
+
+    // Aqui adicionamos ao elemento "paragrafo" uma "escuta", onde o browser espera por um evento predefinido (no caso, click)
+    paragrafo.addEventListener('click', atualizarNome);
+
+    // funcao atualizarNome() altera o texto do elemento após evento de click
+    function atualizarNome() {
+      const nome = prompt('Insira um novo nome') || 'Nicolas';
+      paragrafo.textContent = 'Dev 01: ' + nome;
+    }
+  </script>
+</body>
+
+</html>

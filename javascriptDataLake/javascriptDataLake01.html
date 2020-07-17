@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lake JS - 01</title>
+
+  <link rel="stylesheet" href="styles.css"> <!-- ? Aqui referenciamos um arquivo CSS externo -->
+</head>
+
+<body>
+  <h1 class="tituloClasse" id="tituloId">Título da nossa página</h1>
+  <h2 class="tituloClasse">Subtítulo da página</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit placeat facere excepturi porro quo dicta qui
+    veritatis corporis enim dolorem?</p>
+
+  <!-- ? Assim como o CSS, os Scripts podem ser definidos num arquivo externo .js ou dentro da tag <script> -->
+  <script>
+    // Gravando em variáveis os elementos do HTML por Classe e Id
+    const elementoTituloPorClasse = document.getElementsByClassName('tituloClasse');
+    console.log('Por classe: ', elementoTituloPorClasse);
+
+    const elementoTituloPorId = document.getElementById('tituloId');
+    console.log('Por Id: ', elementoTituloPorId);
+
+    // Estilizando cor da fonte do elemento com Id == 'tituloId'
+    elementoTituloPorId.style.color = "red";
+  </script>
+</body>
+
+</html>
